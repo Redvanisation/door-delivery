@@ -1,8 +1,8 @@
 const div = document.getElementById("chat-bot");
 
-var prompt = require('prompt-sync')();
-var AssistantV1 = require('watson-developer-cloud/assistant/v1');
+var AssistantV1 = fetch('watson-developer-cloud/assistant/v1');
 
+console.log(AssistantV1)
 
 var assistant = new AssistantV1({
 	version: '{2018-09-20}',

@@ -127,6 +127,7 @@ body {
 .main__text {
 	margin-top: 3rem;
 	font-size: 2rem;
+	line-height: 3rem;
 }
 
 .content {
@@ -260,7 +261,7 @@ body {
 
 /* THIRD DIV STYLE */
 
-.volenteer {
+.volunteer {
 	transform: skewY(5deg);
 	width: 100%;
 	height: 100%;
@@ -270,7 +271,7 @@ body {
 	background-position: center;
 }
 
-.volenteer > * {
+.volunteer > * {
 	transform: skewY(-5deg);
 }
 
@@ -360,7 +361,7 @@ body {
 @media screen and (max-width: 580px) {
 	.main-div,
 	.person-order,
-	.volenteer {
+	.volunteer {
 		height: 100%;
 	}
 
