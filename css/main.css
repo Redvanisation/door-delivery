@@ -54,11 +54,14 @@ body {
 	font-weight: 700;
 	text-transform: uppercase;
 	font-size: 6rem;
-	letter-spacing: 2rem;
+	letter-spacing: 3rem;
+	margin-bottom: 3rem;
 }
 
-.header__title--text {
-	margin-top: 5rem;
+.header__title--h3 {
+	text-transform: uppercase;
+	letter-spacing: .5rem;
+	font-weight: 400;
 }
 
 /* MAIN CONTENT STYLE */
