@@ -109,7 +109,7 @@ body {
 .main-div {
 	transform: skewY(5deg);
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	padding: 15rem 10rem;
 	background-color: yellow;
 }
@@ -274,6 +274,40 @@ body {
 	transform: skewY(-5deg);
 }
 
+
+/* PRODUCTS SECTION STYLING */
+
+.main__cards {
+	margin: 10rem 0;
+	width: 100%;
+}
+
+.card {
+	display: inline-block;
+	margin: 0 5rem;
+	/*padding: 2rem 3rem;*/
+	height: 20rem;
+	width: 20rem;
+	border-radius: 1rem;
+	overflow: hidden;
+	box-shadow: 0 .5rem 3rem rgba(0,0,0, .5);
+	position: relative;
+	transition: all .2s;
+}
+
+.card:hover {
+	transform: translateY(-.9rem) scale(1.1);
+}
+
+.card__img {
+	max-width: 100%;
+	width: 100%;
+	height: 100%;
+	filter: blur(.5px); 
+}
+
+
+
 /* FOOTER STYLE */
 
 .footer {
@@ -283,10 +317,22 @@ body {
 	margin-top: -6rem;
 }
 
+/* PAYPAL DONATION BUTTON */
+
 .footer__div {
 	font-weight: 700;
 	padding: 20rem 12rem;
 	padding-top: 25rem;
+}
+
+.paypal__btn {
+	margin-bottom: 6rem;
+}
+
+.paypal__msg {
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+	font-weight: 400;
 }
 
 .footer__contact {
@@ -355,3 +401,4 @@ body {
 		font-size: 1rem ;
 	}
 }
+
