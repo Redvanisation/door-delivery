@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>The Bla Bla Organisation</title>
+	<title>The Door Delivery App</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -18,10 +18,11 @@
 				<a href="#order" class="menu__link"><li>Order</li></a>
 				<a href="#info" class="menu__link"><li>Info</li></a>
 				<a href="#volenteer" class="menu__link"><li>Volenteer</li></a>
+				<a href="#products" class="menu__link"><li>products</li></a>
 			</ul>
 		</div>
 		<div class="header__title">
-			<h1 class="header__title--main">The Bla Bla</h1>
+			<h1 class="header__title--main">Door Delivery</h1>
 			<h3 class="header__title--h3 content">We will gladly make your life easier</h3>
 		</div>
 	</header>
@@ -43,7 +44,7 @@
 				Need help?
 			</h2>
 			<div class="main__text">
-				bla bla bla bla
+				If you need help with a delivery we would be very glad to help you! please fill out the form bellow!
 			</div>
 			<form action="#" class="person__form">
 				<input class="input" type="text" name="full name" placeholder="Full Name"></input>
@@ -85,26 +86,44 @@
 					Want to volenteer?
 				</h2>
 				<div class="main__text">
-					bla bla bla
+					We really need volenteers! if you want to help us we would be very happy! but first please fill out the form bellow:
 				</div>
 
-							<form action="#" class="person__form">
-				<input class="input" type="text" name="full name" placeholder="Full Name"></input>
-				<label class="label" for="full name">Full Name</label>	
+				<form action="#" class="person__form">
+					<input class="input" type="text" name="full name" placeholder="Full Name"></input>
+					<label class="label" for="full name">Full Name</label>	
 
-				<input class="input" type="email" name="email" placeholder="Email Address"></input>
-				<label class="label" for="email">Email Address</label>
+					<input class="input" type="email" name="email" placeholder="Email Address"></input>
+					<label class="label" for="email">Email Address</label>
 
-				<input class="input" type="date" name="age" placeholder="Age"></input>
-				<label class="label age-label" for="age">Age</label>
+					<input class="input" type="date" name="age" placeholder="Age"></input>
+					<label class="label age-label" for="age">Age</label>
 
-				<input type="file" name="upload" class="input-file" placeholder="Proof of ID">
-				<label class="label label-file" for="upload">Proof of ID*</label>
-				<a href="#" class="btn btn-animated">Send!</a>
-			</form>
+					<input type="file" name="upload" class="input-file" placeholder="Proof of ID">
+					<label class="label label-file" for="upload">Proof of ID*</label>
+					<a href="#" class="btn btn-animated">Send!</a>
+				</form>
 
 			</div>
 		</div>
+
+		<div class="main-div" id="products">
+			<h2 class="main__h2">
+				Sample Products
+			</h2>
+			<div class="main__cards">
+				<div class="card">
+					<a href="#"><img src="img/bread.jpg" alt="Bread" class="card__img" title="Bread"></a>
+				</div>
+				<div class="card">
+					<a href="#"><img src="img/milk.jpg" alt="Milk" class="card__img" title="Milk"></a>
+				</div>
+				<div class="card">
+					<a href="#"><img src="img/coke.jpg" alt="Coke" class="card__img" title="Coke"></a>
+				</div>
+			</div>
+		</div>
+
 	</main>
 
 	<footer class="footer">
@@ -113,6 +132,32 @@
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud. 
+			</div>
+
+			<h3 class="paypal__msg">Please support us with a little donation!</h3>
+			<div class="paypal__btn">
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+
+			    <!-- Identify your business so that you can collect the payments. -->
+			    <input type="hidden" name="business"
+			        value="donations@kcparkfriends.org">
+
+			    <!-- Specify a Donate button. -->
+			    <input type="hidden" name="cmd" value="_donations">
+
+			    <!-- Specify details about the contribution -->
+			    <input type="hidden" name="item_name" value="Friends of the Park">
+			    <input type="hidden" name="item_number" value="Fall Cleanup Campaign">
+			    <input type="hidden" name="currency_code" value="USD">
+
+			    <!-- Display the payment button. -->
+			    <input type="image" name="submit"
+			    src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+			    alt="Donate">
+			    <img alt="" width="1" height="1"
+			    src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+			</form>
+
 			</div>
 			<div class="footer__links">
 				<a href="#" class="footer__link"><i class="fab fa-facebook-f footer__icon"></i></a>
