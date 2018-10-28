@@ -22,19 +22,32 @@ body {
     box-sizing: border-box;
     font-family: lato, sans-serif;
     font-size: 2rem;
+    padding: 2rem;
 }
 
+
+/* HEADER STYLE */
+
 .header {
-	width: 80%;
-	margin: 5rem auto 0 auto;
-	background: linear-gradient(to right bottom, rgba(31, 88, 0, .8), rgba(117, 186, 80, .8)) ;
-	color: #eee;
-	padding: 2rem 1.5rem;
+	width: 100%;
+	margin: 0 auto;
+	background-image: linear-gradient(to right bottom, rgba(205, 207, 204, .8), rgba(237, 238, 237, .8)), url('../img/team.jpg');
+	background-size: cover;
+	padding: 15rem 5rem;
 	border-radius: .5rem;
+	height: 105vh;
+	position: relative;
 }
 
 .header__title {
 	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+	padding: 15rem;
 }
 
 .header__title--main {
@@ -44,10 +57,30 @@ body {
 	letter-spacing: 2rem;
 }
 
+.header__title--text {
+	margin-top: 5rem;
+}
+
+/* MAIN CONTENT STYLE */
+
 .main {
-	margin: 5rem auto 0 auto;
-	width: 80%;
+	margin: -6rem auto 0 auto;
 	text-align:center;
+	font-size: 3rem;
+}
+
+/* FIRST DIV STYLE */
+
+.main-div {
+	transform: skewY(5deg);
+	width: 100%;
+	height: 100vh;
+	padding: 15rem 10rem;
+	background-color: yellow;
+}
+
+.main-div > * {
+	transform: skewY(-5deg);
 }
 
 .main__h2 {
@@ -56,7 +89,62 @@ body {
 	letter-spacing: 1.1rem;
 }
 
+.main__text {
+	margin-top: 3rem;
+	font-size: 2rem;
+}
+
 .content {
 	margin: 2rem;
 }
 
+/* SECOND DIV STYLE */
+
+.person-order {
+	transform: skewY(5deg);
+	height: 100%;
+	width: 100%;
+	height: 100vh;
+	padding: 15rem 10rem;
+	/*background-color: red;*/
+	background-image: linear-gradient(to right bottom, rgba(205, 207, 204, .8), rgba(237, 238, 237, .8)), url('../img/elderly.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.person-order > * {
+	transform: skewY(-5deg);
+}
+
+/* THIRD DIV STYLE */
+
+.volenteer {
+	transform: skewY(5deg);
+	height: 100%;
+	width: 100%;
+	height: 100vh;
+	padding: 15rem 10rem;
+	background-image: linear-gradient(to right bottom, rgba(205, 207, 204, .8), rgba(237, 238, 237, .8)), url('../img/charity.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.volenteer > * {
+	transform: skewY(-5deg);
+}
+
+/* FOOTER STYLE */
+
+.footer {
+	background-color: black;
+	text-align: center;
+	color: #fff;
+	/*height: 50vh;*/
+	margin-top: -6rem;
+}
+
+.footer__div {
+	font-weight: 700;
+	padding: 20rem 12rem;
+	padding-top: 25rem;
+}
