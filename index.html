@@ -6,17 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>The Bla Bla Organisation</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 	<header class="header">
+		<div class="menu" id="header">
+			<ul>
+				<a href="#header" class="menu__link"><li>Main</li></a>
+				<a href="#about" class="menu__link"><li>About</li></a>
+				<a href="#order" class="menu__link"><li>Order</li></a>
+				<a href="#info" class="menu__link"><li>Info</li></a>
+				<a href="#volenteer" class="menu__link"><li>Volenteer</li></a>
+			</ul>
+		</div>
 		<div class="header__title">
 			<h1 class="header__title--main">The Bla Bla</h1>
 			<h3 class="header__title--h3 content">We will gladly make your life easier</h3>
 		</div>
 	</header>
 	<main class="main">
-		<div class="main-div">
+		<div class="main-div" id="about">
 			<h2 class="main__h2">
 				about us
 			</h2>
@@ -28,16 +38,35 @@
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</div>
 
-		<div class="person-order">
+		<div class="person-order" id="order">
 			<h2 class="main__h2">
 				Need help?
 			</h2>
 			<div class="main__text">
 				bla bla bla bla
 			</div>
+			<form action="#" class="person__form">
+				<input class="input" type="text" name="full name" placeholder="Full Name"></input>
+				<label class="label" for="full name">Full Name</label>	
+
+				<input class="input" type="email" name="email" placeholder="Email Address"></input>
+				<label class="label" for="email">Email Address</label>
+
+				<input class="input" type="date" name="age" placeholder="Age"></input>
+				<label class="label age-label" for="age">Age</label>
+
+				<input class="input" type="text" name="description" placeholder="Product Description"></input>
+				<label class="label" for="description">Product Description</label>
+
+				<input class="input" type="number" name="weight" placeholder="Product Weight"></input>
+				<label class="label" for="weight">Product Weight</label>
+				<input type="file" name="upload" class="input-file" placeholder="Proof of ID">
+				<label class="label label-file" for="upload">Proof of ID*</label>
+				<a href="#" class="btn btn-animated">Send!</a>
+			</form>
 		</div>
 
-		<div class="main-div">
+		<div class="main-div" id="info">
 			<h2 class="main__h2">
 				More about us!
 			</h2>
@@ -50,20 +79,47 @@
 		</div>
 
 
-		<div class="volenteer">
-			<h2 class="main__h2">
-				Want to volenteer?
-			</h2>
-			<div class="main__text">
-				bla bla bla
+		<div class="volenteer" id="volenteer">
+			<div class="cont">
+				<h2 class="main__h2">
+					Want to volenteer?
+				</h2>
+				<div class="main__text">
+					bla bla bla
+				</div>
+
+							<form action="#" class="person__form">
+				<input class="input" type="text" name="full name" placeholder="Full Name"></input>
+				<label class="label" for="full name">Full Name</label>	
+
+				<input class="input" type="email" name="email" placeholder="Email Address"></input>
+				<label class="label" for="email">Email Address</label>
+
+				<input class="input" type="date" name="age" placeholder="Age"></input>
+				<label class="label age-label" for="age">Age</label>
+
+				<input type="file" name="upload" class="input-file" placeholder="Proof of ID">
+				<label class="label label-file" for="upload">Proof of ID*</label>
+				<a href="#" class="btn btn-animated">Send!</a>
+			</form>
+
 			</div>
 		</div>
 	</main>
 
 	<footer class="footer">
 		<div class="footer__div">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+			<div class="footer__contact">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud. 
+			</div>
+			<div class="footer__links">
+				<a href="#" class="footer__link"><i class="fab fa-facebook-f footer__icon"></i></a>
+				<a href="#" class="footer__link"><i class="fab fa-instagram footer__icon"></i></a>
+				<a href="#" class="footer__link"><i class="fab fa-whatsapp footer__icon"></i></a>
+				<a href="#" class="footer__link"><i class="fab fa-twitter footer__icon"></i></a>
+			</div>
 		</div>
 	</footer>
 
