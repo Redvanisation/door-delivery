@@ -1,0 +1,182 @@
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: $gradient-white, url(../../../img/team.jpg);
+    background-size: cover;
+    margin-bottom: 5rem;
+
+    &__title {
+        @include absCenter;
+        transform: translate(-50%, -100%);
+        width: 100%;
+        text-align: center;
+        padding: 2rem;
+    }
+}
+
+.main {
+    text-align: center;
+
+    &__skewed-section {
+        padding: 15rem 10rem;
+        margin-top: -10rem;
+        transform: skewY(3deg);
+        background-color: $color-secondary;
+        
+        & > * {
+            transform: skewY(-3deg);
+        }
+
+        @include respond(phone-vs) {
+            padding: 10rem 2rem;
+        }
+    }
+
+    &__normal-section {
+        margin-top: -10rem;
+        margin-bottom: 5rem;
+        padding: 25rem 10rem;
+        background-color: $color-primary;
+
+        @include respond(phone) {
+            padding: 25rem 5rem;
+        }
+
+        @include respond(phone-vs) {
+            padding: 25rem 1rem;
+        }
+
+    }
+
+    &__order {
+        background-image: $gradient-white, url(../../../img/elderly.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    &__volunteer {
+        background-image: $gradient-white, url(../../../img/team.jpg);
+        background-size: cover;
+        background-position: center;        
+    }
+
+    &__products {
+
+        @include respond(phone) {
+            padding: 25rem 1rem;
+        }
+    }
+
+    &__form {
+
+        &--input {
+            display: block;
+            margin: 2rem auto;
+            width: 80%;
+            padding: 1.5rem 2rem;
+            border: 5px solid $color-secondary;
+            background-color: rgba(#fff, .5);
+            border-radius: 3px;
+            outline: none;
+            transition: all .3s;
+
+            @include respond(tab-port) {
+                width: 100%;
+            }
+            
+            &:focus {
+                transform: scale(1.05);
+                background-color: rgba($color-grey, .5);
+                border-top: 5px solid transparent;
+                border-right: none;
+                border-left: none;
+                border-bottom: 5px solid $color-secondary;
+            }
+
+            &::-webkit-input-placeholder {
+                color: $color-grey;
+                letter-spacing: .1rem;
+            }
+
+            &:placeholder-shown + .main__form--label {
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(-6rem);
+            }
+        }
+
+        &--input-file-hidden {
+            display: none;
+        }
+
+        &--label {
+            transition: all .8s;
+            display: inline-block;
+
+        }
+
+        &--label-file {
+            display: inline-block;
+            margin: 5rem 2rem;
+        }
+    }
+}
+
+.footer {
+    margin-bottom: 0;
+    background-color: $color-black;
+    color: $color-primary;
+    text-align: center;
+
+    &__text {
+        display: inline-block;
+        padding: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    &__hr {
+        width: 60%;
+        border: 1px solid $color-secondary;
+        margin: 0 auto;
+        margin-top: 8rem;
+    }
+
+    &__links {
+        padding: 3rem 0;
+
+        &--link {
+            &,
+            &:link,
+            &:visited {
+                font-size: 3rem;
+                color: $color-primary;
+                transition: all .1s;
+
+                &:not(:last-child) {
+                    margin-right: 3rem;
+                }
+
+                &:hover {
+                    color: $color-secondary;
+                }
+            }
+        }
+
+    }
+
+    &__icon {
+        transition: all .3s;
+        &:hover {
+            transform: scale(1.5) rotate(20deg);
+        }
+    }
+}
+
+.paypal__msg {
+    display: inline-block;
+    margin-bottom: 3rem;
+}
+
+.paypal__btn {
+    margin-bottom: 3rem;
+}

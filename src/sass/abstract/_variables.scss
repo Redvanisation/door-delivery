@@ -1,0 +1,20 @@
+// COLORS:
+$color-primary: #eee;
+$color-secondary: #FFFF00;
+$color-secondary-dark: #999900;
+
+$color-grey: #999;
+$color-black: #000;
+
+
+$gradient-white: linear-gradient(to right bottom, rgba(205, 207, 204, .8), rgba(237, 238, 237, .8));
+
+$gradient-grey: linear-gradient(to right bottom, rgba(205, 207, 204, .8), rgba($color-black, .8));
+
+
+// FONT:
+
+$type-face: 'lato', sans-serif;
+
+$global-font-size: 1.7rem; 
+

@@ -1,0 +1,126 @@
+body {
+    font-family: $type-face;
+    font-size: $global-font-size;
+}
+
+.heading-primary {
+    text-transform: uppercase;
+    letter-spacing: 2rem;
+    line-height: 1.6;
+    font-size: 7rem;
+    font-weight: 500;
+
+    @include respond(tab-port) {
+        font-size: 5rem;
+    }
+
+    @include respond(phone) {
+        font-size: 4rem;
+        letter-spacing: 1rem;
+    }
+
+    @include respond(phone-vs) {
+        font-size: 3.5rem;
+        letter-spacing: .3rem;
+    }
+}
+
+.heading-secondary {
+    text-transform: uppercase;
+    letter-spacing: 2rem;
+    line-height: 1.6;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+
+    @include respond(phone) {
+        font-size: 3rem;
+        letter-spacing: 1.5rem;
+    }
+
+    @include respond(phone-vs) {
+        font-size: 2rem;
+        letter-spacing: .4rem;
+    }
+}
+
+.heading-tertiary {
+    @include textShadow;
+    text-transform: uppercase;
+    letter-spacing: 1.5rem;
+    line-height: 1.6;
+    font-size: 2rem;
+    font-weight: 400;
+
+    @include respond(tab-port) {
+        letter-spacing: .7rem;
+    }
+
+    @include respond(phone) {
+        font-size: 1.5rem;
+        letter-spacing: .4rem;
+    }
+
+    @include respond(phone) {
+        letter-spacing: .1rem;
+    }
+}
+
+.header {
+
+    &__menu {
+
+        &--link {
+            &,
+            &:link,
+            &:visited {
+
+            }
+
+            &:hover {
+
+            }
+        }
+
+
+    }
+}
+
+.main {
+
+    &__text {
+        line-height: 1.5;
+        font-size: 1.7rem;
+        margin-bottom: .5rem;
+
+        &--important {
+            margin-bottom: 3rem;
+            font-weight: 700;
+        }
+    }
+
+    &__form {
+
+
+        &--input {
+            font-size: $global-font-size;
+            text-align: center;
+
+        }
+    }
+}
+
+.paypal__msg {
+    text-transform: capitalize;
+    letter-spacing: .15rem;
+
+    @include respond(phone) {
+        font-size: 1.7rem;
+        letter-spacing: .1rem;
+    }
+
+    @include respond(phone-vs) {
+        font-size: 1.5rem;
+        letter-spacing: 0;
+    }
+}

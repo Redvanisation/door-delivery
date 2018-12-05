@@ -1,0 +1,44 @@
+.btn {
+    display: inline-block;
+    padding: 2rem 4rem;
+    border: 2px solid $color-black;
+    border-radius: 3px;
+    cursor: pointer;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    color: $color-black;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all .3s;
+
+    @include respond(tab-port) {
+        padding: 1.5rem 3.5rem;
+    }
+
+    @include respond(phone) {
+        padding: 2.5rem;
+        display: block;
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    @include respond(phone-vs) {
+        width: 40%;
+        font-size: 1.5rem;
+        letter-spacing: 0;
+    }
+
+    &:hover {
+        background-color: $color-secondary;
+        color: $color-black;
+        border-color: $color-secondary;
+        transform: translateY(-.5rem);
+        box-shadow: 0 1rem 3rem rgba($color-black, .5);
+    }
+    
+    &:active {
+        
+        transform: translateY(-.1rem);
+        box-shadow: 0 .5rem 2rem rgba($color-black, .5);
+    }
+}

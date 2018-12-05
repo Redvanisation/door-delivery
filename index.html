@@ -7,157 +7,173 @@
 	<title>The Door Delivery App</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/main.css"> -->
+	<link rel="stylesheet" type="text/css" href="dist/css/main.comp.css">
 </head>
-<body>
+<body onload=init()>
 	<header class="header">
-		<div class="menu" id="header">
+
+		<!-- <div class="header__menu" id="header">
 			<ul>
-				<a href="#header" class="menu__link"><li>Main</li></a>
-				<a href="#about" class="menu__link"><li>About</li></a>
-				<a href="#order" class="menu__link"><li>Order</li></a>
-				<a href="#info" class="menu__link"><li>Vision</li></a>
-				<a href="#volunteer" class="menu__link"><li>volunteer</li></a>
-				<a href="#products" class="menu__link"><li>products</li></a>
+				<a href="#header" class="header__menu--link"><li>Main</li></a>
+				<a href="#about" class="header__menu--link"><li>About</li></a>
+				<a href="#order" class="header__menu--link"><li>Order</li></a>
+				<a href="#info" class="header__menu--link"><li>Vision</li></a>
+				<a href="#volunteer" class="header__menu--link"><li>volunteer</li></a>
+				<a href="#products" class="header__menu--link"><li>products</li></a>
 			</ul>
-		</div>
+		</div> -->
 		<div class="header__title">
-			<h1 class="header__title--main">Door Delivery</h1>
-			<h3 class="header__title--h3 content">We will gladly make your life easier</h3>
+			<h1 class="heading-primary">Door Delivery</h1>
+			<h3 class="heading-tertiary">We will gladly make your life easier</h3>
 		</div>
 	</header>
+
+	
 	<main class="main">
-		<div class="main-div" id="about">
-			<h2 class="main__h2">
-				about us
-			</h2>
-			<p class="main__text">Door Delivery is a platform that was established just last night in this Hackattack which lets the elderly or disabled people to order groceries from their local market at free of cost. We are a non-profit community serving platform. We do not have any locations as we completely operate online at the moment. If you would like to support us in anyway, You can also use the Volunteer page on our site to leave your info. We will contact you shortly!!</p>
-		</div>
+		<div class="container">
+			 <section class="box box-1 main__skewed-section main__about" id="about">
+				<h2 class="heading-secondary">
+					about us
+				</h2>
+				<p class="main__text">Door Delivery is a platform that was established just last night in this Hackattack which lets the elderly or disabled people to order groceries from their local market at free of cost. We are a non-profit community serving platform. We do not have any locations as we completely operate online at the moment. <p class="main__text--important">If you would like to support us in anyway, You can use the Volunteer form bellow our site to leave your info and We will contact you shortly or you can make a donation which we would be very grateful about!!</p></p>
+			</section>
+	
+			<section class="box box-2 main__normal-section main__order" id="order">
+				<h2 class="heading-secondary">
+					Need help?
+				</h2>
+				<div class="main__text">
+					If you need help with a delivery we would be very glad to help you! please fill out the form bellow!
+				</div>
+				<form action="#" class="main__form">
+					<input class="main__form--input" type="text" name="full name" placeholder="Full Name"></input>
+					<label class="main__form--label" for="full name">Full Name</label>	
+	
+					<input class="main__form--input" type="email" name="email" placeholder="Email Address"></input>
+					<label class="main__form--label" for="email">Email Address</label>
+	
+					<input class="main__form--input" type="text" name="age" placeholder="Date of Birth" id="age"></input>
+					<label class="main__form--label " for="age">Date of Birth</label>
+	
+					<input class="main__form--input" type="text" name="description" placeholder="Product Description"></input>
+					<label class="main__form--label" for="description">Product Description</label>
+	
+					<input class="main__form--input" type="number" name="weight" placeholder="Product Weight"></input>
+					<label class="main__form--label" for="weight">Product Weight</label>
+					<br>
+					<input type="file" name="upload" class="main__form--input-file-hidden">
 
-		<div class="person-order" id="order">
-			<h2 class="main__h2">
-				Need help?
-			</h2>
-			<div class="main__text">
-				If you need help with a delivery we would be very glad to help you! please fill out the form bellow!
-			</div>
-			<form action="#" class="person__form">
-				<input class="input" type="text" name="full name" placeholder="Full Name"></input>
-				<label class="label" for="full name">Full Name</label>	
+					<label class="btn main__form--label-file" for="upload">ID Proof</label>
 
-				<input class="input" type="email" name="email" placeholder="Email Address"></input>
-				<label class="label" for="email">Email Address</label>
+					<a href="#" class="btn btn-animated">Send!</a>
+				</form>
+			</section>
+	
+			<section class="box box-3 main__skewed-section main__vision" id="info">
+				<h2 class="heading-secondary">
+					Our vision
+				</h2>
+				<p class="main__text">Door Delivery is a start up and we wish to help local communities especially among the elders and disabled. But we do not want to be limited on just that. We want to expand in future and serve the community among all people and just specific groups.
+				</p>
+			</section>
 
-				<input class="input" type="date" name="age" placeholder="Age"></input>
-				<label class="label age-label" for="age">Age</label>
-
-				<input class="input" type="text" name="description" placeholder="Product Description"></input>
-				<label class="label" for="description">Product Description</label>
-
-				<input class="input" type="number" name="weight" placeholder="Product Weight"></input>
-				<label class="label" for="weight">Product Weight</label>
-				<input type="file" name="upload" class="input-file" placeholder="Proof of ID">
-				<label class="label label-file" for="upload">Proof of ID*</label>
-				<a href="#" class="btn btn-animated">Send!</a>
-			</form>
-		</div>
-
-		<div class="main-div" id="info">
-			<h2 class="main__h2">
-				Our vision
-			</h2>
-			<p class="main__text">Door Delivery is a start up and we wish to help local communities especially among the elders and disabled. But we do not want to be limited on just that. We want to expand in future and serve the community among all people and just specific groups.
-			</p>
-		</div>
-
-
-		<div class="volunteer" id="volunteer">
-			<div class="cont">
-				<h2 class="main__h2">
+			<section class="box box-4 main__normal-section main__volunteer" id="volunteer">
+					<!-- <div class="cont"> -->
+				<h2 class="heading-secondary">
 					Want to volunteer?
 				</h2>
 				<div class="main__text">
 					We really need volunteers! if you want to help us we would be very happy! but first please fill out the form bellow:
 				</div>
 
-				<form action="#" class="person__form">
-					<input class="input" type="text" name="full name" placeholder="Full Name"></input>
-					<label class="label" for="full name">Full Name</label>	
+				<form action="#" class="main__form">
+					<input class="main__form--input" type="text" name="full name" placeholder="Full Name"></input>
+					<label class="main__form--label" for="full name">Full Name</label>	
 
-					<input class="input" type="email" name="email" placeholder="Email Address"></input>
-					<label class="label" for="email">Email Address</label>
+					<input class="main__form--input" type="email" name="email" placeholder="Email Address"></input>
+					<label class="main__form--label" for="email">Email Address</label>
 
-					<input class="input" type="date" name="age" placeholder="Age"></input>
-					<label class="label age-label" for="age">Age</label>
+					<input class="main__form--input" type="text" name="age" placeholder="Date of Birth" id="age-volunteer"></input>
+					<label class="main__form--label age-label" for="age" >Date of Birth</label>
+					<br>
+					<input type="file" name="upload" id="upload" class="main__form--input-file-hidden">
+					<label class="btn main__form--label-file" for="upload">ID Proof</label>
 
-					<input type="file" name="upload" class="input-file" placeholder="Proof of ID">
-					<label class="label label-file" for="upload">Proof of ID*</label>
 					<a href="#" class="btn btn-animated">Send!</a>
 				</form>
 
-			</div>
-		</div>
+			<!-- </div> -->
+		</section>
 
-		<div class="main-div" id="products">
-			<h2 class="main__h2">
-				Sample Products
-			</h2>
-			<div class="main__cards">
-				<div class="card">
-					<a href="#"><img src="img/bread.jpg" alt="Bread" class="card__img" title="Bread"></a>
+		<section class="box box-5 main__skewed-section main__products" id="products">
+				<h2 class="heading-secondary">
+					Sample Products
+				</h2>
+				<div class="cards">
+					<div class="cards__card cards__card--bread">
+						<!-- <img src="img/bread.jpg" alt="Bread" class="cards__img" title="Bread"> -->
+						<a href="#" class="cards__card--description">Bread</a>
+					</div>
+					<div class="cards__card cards__card--milk">
+						<!-- <img src="img/milk.jpg" alt="Milk" class="cards__img" title="Milk"> -->
+						<a href="#" class="cards__card--description">Milk</a>
+					</div>
+					<div class="cards__card cards__card--coke">
+						<!-- <img src="img/coke.jpg" alt="Coke" class="cards__img" title="Coke"> -->
+						<a href="#" class="cards__card--description">Coke</a>
+					</div>
 				</div>
-				<div class="card">
-					<a href="#"><img src="img/milk.jpg" alt="Milk" class="card__img" title="Milk"></a>
-				</div>
-				<div class="card">
-					<a href="#"><img src="img/coke.jpg" alt="Coke" class="card__img" title="Coke"></a>
-				</div>
-			</div>
+			</section>
 		</div>
 	</main>
 
-	<footer class="footer">
-		<div class="footer__div">
-			<div class="footer__contact">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud. 
-			</div>
+	<footer class="main__normal-section footer">
+			<!-- <div class="footer__div"> -->
+				<div class="footer__text">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud. 
+				</div>
+	
+				<h3 class="paypal__msg">Please support us with a little donation!</h3>
+				<div class="paypal__btn">
+					<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+	
+					<!-- Identify your business so that you can collect the payments. -->
+					<input type="hidden" name="business"
+						value="donations@kcparkfriends.org">
+	
+					<!-- Specify a Donate button. -->
+					<input type="hidden" name="cmd" value="_donations">
+	
+					<!-- Specify details about the contribution -->
+					<input type="hidden" name="item_name" value="Friends of the Park">
+					<input type="hidden" name="item_number" value="Fall Cleanup Campaign">
+					<input type="hidden" name="currency_code" value="USD">
+	
+					<!-- Display the payment button. -->
+					<input type="image" name="submit"
+					src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+					alt="Donate">
+					<img alt="" width="1" height="1"
+					src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+				</form>
+				</div>
 
-			<h3 class="paypal__msg">Please support us with a little donation!</h3>
-			<div class="paypal__btn">
-				<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				<hr class="footer__hr">
+	
+				<div class="footer__links">
+					<a href="#" class="footer__links--link"><i class="fab fa-facebook-f footer__icon"></i></a>
+					<a href="#" class="footer__links--link"><i class="fab fa-instagram footer__icon"></i></a>
+					<a href="#" class="footer__links--link"><i class="fab fa-whatsapp footer__icon"></i></a>
+					<a href="#" class="footer__links--link"><i class="fab fa-twitter footer__icon"></i></a>
+				</div>
+			<!-- </div> -->
+		</footer>
 
-			    <!-- Identify your business so that you can collect the payments. -->
-			    <input type="hidden" name="business"
-			        value="donations@kcparkfriends.org">
+	
 
-			    <!-- Specify a Donate button. -->
-			    <input type="hidden" name="cmd" value="_donations">
-
-			    <!-- Specify details about the contribution -->
-			    <input type="hidden" name="item_name" value="Friends of the Park">
-			    <input type="hidden" name="item_number" value="Fall Cleanup Campaign">
-			    <input type="hidden" name="currency_code" value="USD">
-
-			    <!-- Display the payment button. -->
-			    <input type="image" name="submit"
-			    src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
-			    alt="Donate">
-			    <img alt="" width="1" height="1"
-			    src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
-			</form>
-
-			</div>
-			<div class="footer__links">
-				<a href="#" class="footer__link"><i class="fab fa-facebook-f footer__icon"></i></a>
-				<a href="#" class="footer__link"><i class="fab fa-instagram footer__icon"></i></a>
-				<a href="#" class="footer__link"><i class="fab fa-whatsapp footer__icon"></i></a>
-				<a href="#" class="footer__link"><i class="fab fa-twitter footer__icon"></i></a>
-			</div>
-		</div>
-	</footer>
-
-	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="src/js/main.js"></script>
 </body>
 </html>
