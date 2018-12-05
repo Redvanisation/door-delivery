@@ -1,7 +1,7 @@
 .header {
     width: 100%;
     height: 100vh;
-    background-image: $gradient-white, url(../../../img/team.jpg);
+    background-image: $gradient-white, url('https://redvanisation.github.io/door-delivery/img/team.jpg');
     background-size: cover;
     margin-bottom: 5rem;
 
@@ -49,13 +49,13 @@
     }
 
     &__order {
-        background-image: $gradient-white, url(../../../img/elderly.jpg);
+        background-image: $gradient-white, url('https://redvanisation.github.io/door-delivery/img/elderly.jpg');
         background-size: cover;
         background-position: center;
     }
     
     &__volunteer {
-        background-image: $gradient-white, url(../../../img/team.jpg);
+        background-image: $gradient-white, url('https://redvanisation.github.io/door-delivery/img/team.jpg');
         background-size: cover;
         background-position: center;        
     }
