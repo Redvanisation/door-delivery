@@ -185,6 +185,91 @@ body {
       left: 50%;
       transform: translate(-50%, -50%); }
 
+.navigation__checkbox {
+  display: none; }
+
+.navigation__button {
+  display: inline-block;
+  font-size: 4rem;
+  position: fixed;
+  top: 4rem;
+  right: 6rem;
+  cursor: pointer;
+  transition: all .3s;
+  z-index: 500; }
+  @media only screen and (max-width: 46.875em) {
+    .navigation__button {
+      right: 4rem; } }
+  @media only screen and (max-width: 25.5em) {
+    .navigation__button {
+      top: 3rem;
+      right: 3rem; } }
+  .navigation__button:hover, .navigation__button:focus {
+    transform: scale(1.3); }
+  .navigation__button--icon {
+    width: 4rem;
+    height: .4rem;
+    background-color: #000;
+    margin: .6rem 0;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+  .navigation__button--bar1, .navigation__button--bar2, .navigation__button--bar3 {
+    transition: .4s; }
+  .change .navigation__button--bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-5px, 6px);
+    background-color: #eee; }
+  .change .navigation__button--bar2 {
+    opacity: 0; }
+  .change .navigation__button--bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-7px, -8px);
+    background-color: #eee; }
+
+.navigation__background {
+  height: 0;
+  opacity: 0;
+  top: -50%;
+  width: 100%;
+  position: fixed;
+  background-image: linear-gradient(to right bottom, rgba(205, 207, 204, 0.8), rgba(0, 0, 0, 0.8));
+  z-index: 2;
+  padding: 15rem 0;
+  transition: all .5s;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+
+.navigation__nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  height: 100%;
+  width: 100%; }
+  .navigation__nav--list {
+    list-style: none; }
+  .navigation__nav--item {
+    margin: 1rem; }
+  .navigation__nav--link, .navigation__nav--link:link, .navigation__nav--link:visited {
+    display: inline-block;
+    color: #FFFF00;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .5rem;
+    line-height: 1.6;
+    font-weight: 600;
+    font-size: 2rem;
+    transition: all .3s;
+    border-bottom: 2px solid transparent;
+    text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+    .navigation__nav--link:hover, .navigation__nav--link:link:hover, .navigation__nav--link:visited:hover {
+      color: #eee;
+      transform: scale(1.2); }
+
+.navigation__checkbox:checked ~ .navigation__background {
+  top: 0;
+  height: 40vh;
+  opacity: 1; }
+
 .header {
   width: 100%;
   height: 100vh;
@@ -237,7 +322,7 @@ body {
   .main__form--input {
     display: block;
     margin: 2rem auto;
-    width: 80%;
+    width: 70%;
     padding: 1.5rem 2rem;
     border: 5px solid #FFFF00;
     background-color: rgba(255, 255, 255, 0.5);
@@ -246,7 +331,7 @@ body {
     transition: all .3s; }
     @media only screen and (max-width: 56.25em) {
       .main__form--input {
-        width: 100%; } }
+        width: 90%; } }
     .main__form--input:focus {
       transform: scale(1.05);
       background-color: rgba(153, 153, 153, 0.5);
@@ -279,6 +364,12 @@ body {
     display: inline-block;
     padding: 2rem;
     margin-bottom: 4rem; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__text {
+        line-height: 2; } }
+    @media only screen and (max-width: 25.5em) {
+      .footer__text {
+        line-height: 2.5; } }
   .footer__hr {
     width: 60%;
     border: 1px solid #FFFF00;
@@ -294,6 +385,17 @@ body {
         margin-right: 3rem; }
       .footer__links--link:hover, .footer__links--link:link:hover, .footer__links--link:visited:hover {
         color: #FFFF00; }
+  .footer__redvanisation, .footer__redvanisation:link, .footer__redvanisation:visited {
+    display: inline-block;
+    color: #eee;
+    text-decoration: none;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    transition: all .3s; }
+  .footer__redvanisation:hover {
+    color: #FFFF00;
+    transform: rotate(10deg) scale(1.2);
+    text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); }
   .footer__icon {
     transition: all .3s; }
     .footer__icon:hover {

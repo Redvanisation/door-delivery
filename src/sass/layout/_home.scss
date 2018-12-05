@@ -72,7 +72,7 @@
         &--input {
             display: block;
             margin: 2rem auto;
-            width: 80%;
+            width: 70%;
             padding: 1.5rem 2rem;
             border: 5px solid $color-secondary;
             background-color: rgba(#fff, .5);
@@ -81,7 +81,7 @@
             transition: all .3s;
 
             @include respond(tab-port) {
-                width: 100%;
+                width: 90%;
             }
             
             &:focus {
@@ -132,6 +132,14 @@
         display: inline-block;
         padding: 2rem;
         margin-bottom: 4rem;
+
+        @include respond(tab-port) {
+            line-height: 2;
+        }
+
+        @include respond(phone-vs) {
+            line-height: 2.5;
+        }
     }
 
     &__hr {
@@ -162,6 +170,26 @@
             }
         }
 
+    }
+
+    &__redvanisation {
+        &,
+        &:link,
+        &:visited {
+            display: inline-block;
+            color: $color-primary;
+            text-decoration: none;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            transition: all .3s;
+
+        }
+
+        &:hover {
+            color: $color-secondary;
+            transform: rotate(10deg) scale(1.2);
+            @include textShadow;
+        }
     }
 
     &__icon {

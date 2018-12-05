@@ -1,0 +1,126 @@
+.navigation {
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__button {
+        display: inline-block;
+        font-size: 4rem;
+        position: fixed;
+        top: 4rem;
+        right: 6rem;
+        cursor: pointer;
+        transition: all .3s;
+        z-index: 500;
+
+        @include respond(phablet) {
+            right: 4rem;
+        }
+
+        @include respond(phone-vs) {
+            top: 3rem;
+            right: 3rem;
+        }
+
+        &:hover,
+        &:focus {
+            transform: scale(1.3);
+        }
+
+        &--icon {
+            width: 4rem;
+            height: .4rem;
+            background-color: $color-black;
+            margin: .6rem 0;
+            @include boxShadow;
+
+        }
+
+        &--bar1, 
+        &--bar2,
+        &--bar3 {
+            transition: .4s;
+        }
+
+        .change &--bar1 {
+            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-5px, 6px) ;
+            background-color: $color-primary;
+        }
+        
+        .change &--bar2 {
+            opacity: 0;
+        }
+        
+        .change &--bar3 {
+            -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+            transform: rotate(45deg) translate(-7px, -8px) ;
+            background-color: $color-primary;
+        }
+    }
+
+    &__background {
+        height: 0;
+        opacity: 0;
+        top: -50%;
+        width: 100%;
+        position: fixed;
+        // background-color: $color-primary;
+        background-image: $gradient-grey;
+        z-index: 2;
+        padding: 15rem 0;
+        transition: all .5s;
+        @include boxShadow;
+        
+    }
+
+    &__nav {
+        @include absCenter;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        height: 100%;
+        width: 100%;
+
+
+        &--list {
+            list-style:none;
+        }
+
+        &--item {
+            margin: 1rem;
+        }
+
+        &--link {
+            &,
+            &:link,
+            &:visited {
+                display: inline-block;
+                color: $color-secondary;
+                text-transform: uppercase;
+                text-decoration: none;
+                letter-spacing: .5rem;
+                line-height: 1.6;
+                font-weight: 600;
+                font-size: 2rem;
+                transition: all .3s;
+                border-bottom: 2px solid transparent;
+                @include textShadow;
+
+                &:hover {
+                    color: $color-primary;
+                    // border-bottom: 2px solid $color-grey;
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+
+    &__checkbox:checked ~ &__background {
+        top: 0;
+        height: 40vh;
+        opacity: 1;
+    }
+
+
+}

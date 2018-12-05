@@ -1,4 +1,4 @@
 node_modules
 .babelrc
-index1.html
-main.css
+dist/css/style.prefix.css
+dist/css/main.comp.css

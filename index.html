@@ -7,22 +7,35 @@
 	<title>The Door Delivery App</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-	<!-- <link rel="stylesheet" type="text/css" href="css/main.css"> -->
-	<link rel="stylesheet" type="text/css" href="dist/css/main.comp.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/main.css">
 </head>
-<body onload=init()>
-	<header class="header">
+<body onload=init() id="body">
+	<div class="navigation" id="header">
+		
+		<input type="checkbox" class="navigation__checkbox" name="navigation-checkbox" id="navigation-checkbox">
+		<label for="navigation-checkbox" class="navigation__button" id="navigation-button">
+			<div class="navigation__button--icon navigation__button--bar1"></div>
+			<div class="navigation__button--icon navigation__button--bar2"></div>
+			<div class="navigation__button--icon navigation__button--bar3"></div>
+		</label>
 
-		<!-- <div class="header__menu" id="header">
-			<ul>
-				<a href="#header" class="header__menu--link"><li>Main</li></a>
-				<a href="#about" class="header__menu--link"><li>About</li></a>
-				<a href="#order" class="header__menu--link"><li>Order</li></a>
-				<a href="#info" class="header__menu--link"><li>Vision</li></a>
-				<a href="#volunteer" class="header__menu--link"><li>volunteer</li></a>
-				<a href="#products" class="header__menu--link"><li>products</li></a>
-			</ul>
-		</div> -->
+		<div class="navigation__background">
+			<nav class="navigation__nav">
+	
+				<ul class="navigation__nav--list">
+					<li class="navigation__nav--item"><a  id="menu-main" href="#header" class="navigation__nav--link">Main</a></li>
+					<li class="navigation__nav--item"><a id="menu-about" href="#about" class="navigation__nav--link">About</a></li>
+					<li class="navigation__nav--item"><a id="menu-order" href="#order" class="navigation__nav--link">Order</a></li>
+					<li class="navigation__nav--item"><a id="menu-vision" href="#info" class="navigation__nav--link">Vision</a></li>
+					<li class="navigation__nav--item"><a id="menu-vol" href="#volunteer" class="navigation__nav--link">volunteer</a></li>
+					<li class="navigation__nav--item"><a id="menu-prod" href="#products" class="navigation__nav--link">products</a></li>
+				</ul>
+			</nav>
+		</div>
+		
+
+	</div>
+	<header class="header">
 		<div class="header__title">
 			<h1 class="heading-primary">Door Delivery</h1>
 			<h3 class="heading-tertiary">We will gladly make your life easier</h3>
@@ -39,8 +52,8 @@
 				<p class="main__text">Door Delivery is a platform that was established just last night in this Hackattack which lets the elderly or disabled people to order groceries from their local market at free of cost. We are a non-profit community serving platform. We do not have any locations as we completely operate online at the moment. <p class="main__text--important">If you would like to support us in anyway, You can use the Volunteer form bellow our site to leave your info and We will contact you shortly or you can make a donation which we would be very grateful about!!</p></p>
 			</section>
 	
-			<section class="box box-2 main__normal-section main__order" id="order">
-				<h2 class="heading-secondary">
+			<section class="box box-2 main__normal-section main__order" >
+				<h2 class="heading-secondary" id="order">
 					Need help?
 				</h2>
 				<div class="main__text">
@@ -78,9 +91,8 @@
 				</p>
 			</section>
 
-			<section class="box box-4 main__normal-section main__volunteer" id="volunteer">
-					<!-- <div class="cont"> -->
-				<h2 class="heading-secondary">
+			<section class="box box-4 main__normal-section main__volunteer" >
+				<h2 class="heading-secondary" id="volunteer">
 					Want to volunteer?
 				</h2>
 				<div class="main__text">
@@ -103,11 +115,10 @@
 					<a href="#" class="btn btn-animated">Send!</a>
 				</form>
 
-			<!-- </div> -->
 		</section>
 
-		<section class="box box-5 main__skewed-section main__products" id="products">
-				<h2 class="heading-secondary">
+		<section class="box box-5 main__skewed-section main__products" >
+				<h2 class="heading-secondary" id="products">
 					Sample Products
 				</h2>
 				<div class="cards">
@@ -131,9 +142,7 @@
 	<footer class="main__normal-section footer">
 			<!-- <div class="footer__div"> -->
 				<div class="footer__text">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud. 
+					This website was coded and designed using HTML5, CSS3, SASS and ES6 JavaScript by <a href="https://github.com/Redvanisation" target="_blank" class="footer__redvanisation">Redvanisation</a> &copy; 2018
 				</div>
 	
 				<h3 class="paypal__msg">Please support us with a little donation!</h3>
@@ -173,7 +182,14 @@
 		</footer>
 
 	
+	<script src="dist/js/smooth-scroll.polyfills.min.js"></script>
+	<script>
+        	var scroll = new SmoothScroll('a[href*="#"]', {
+                speed: 550
+            });
+    </script>
 
-	<script type="text/javascript" src="src/js/main.js"></script>
+	<script type="text/javascript" src="dist/js/main.js"></script>
+
 </body>
 </html>
