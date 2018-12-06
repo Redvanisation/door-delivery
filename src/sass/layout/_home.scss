@@ -173,6 +173,7 @@
             color: $color-primary;
             text-decoration: none;
             font-size: 1.8rem;
+            margin: 0 .5rem;
             text-transform: uppercase;
             transition: all .3s;
 
@@ -180,7 +181,7 @@
 
         &:hover {
             color: $color-secondary;
-            transform: rotate(10deg) scale(1.2);
+            transform: rotate(7deg) scale(1.1);
             @include textShadow;
         }
     }

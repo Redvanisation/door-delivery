@@ -391,11 +391,12 @@ body {
     color: #eee;
     text-decoration: none;
     font-size: 1.8rem;
+    margin: 0 .5rem;
     text-transform: uppercase;
     transition: all .3s; }
   .footer__redvanisation:hover {
     color: #FFFF00;
-    transform: rotate(10deg) scale(1.2);
+    transform: rotate(7deg) scale(1.1);
     text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); }
   .footer__icon {
     transition: all .3s; }
