@@ -14,6 +14,18 @@
         transition: all .3s;
         z-index: 500;
 
+        &:hover &--bar1 {
+            background-color: $color-primary;
+        }
+
+        &:hover &--bar2 {
+            background-color: $color-primary;
+        }
+
+        &:hover &--bar3 {
+            background-color: $color-primary;
+        }
+
         @include respond(phablet) {
             right: 4rem;
         }
@@ -66,7 +78,6 @@
         top: -50%;
         width: 100%;
         position: fixed;
-        // background-color: $color-primary;
         background-image: $gradient-grey;
         z-index: 2;
         padding: 15rem 0;

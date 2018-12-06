@@ -197,6 +197,12 @@ body {
   cursor: pointer;
   transition: all .3s;
   z-index: 500; }
+  .navigation__button:hover .navigation__button--bar1 {
+    background-color: #eee; }
+  .navigation__button:hover .navigation__button--bar2 {
+    background-color: #eee; }
+  .navigation__button:hover .navigation__button--bar3 {
+    background-color: #eee; }
   @media only screen and (max-width: 46.875em) {
     .navigation__button {
       right: 4rem; } }
@@ -363,13 +369,8 @@ body {
   .footer__text {
     display: inline-block;
     padding: 2rem;
-    margin-bottom: 4rem; }
-    @media only screen and (max-width: 56.25em) {
-      .footer__text {
-        line-height: 2; } }
-    @media only screen and (max-width: 25.5em) {
-      .footer__text {
-        line-height: 2.5; } }
+    margin-bottom: 4rem;
+    line-height: 1.5; }
   .footer__hr {
     width: 60%;
     border: 1px solid #FFFF00;
