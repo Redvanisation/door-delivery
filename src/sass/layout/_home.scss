@@ -1,7 +1,13 @@
 .header {
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    (max-resolution: 192dpi) and (min-width: 125em) {
+        background-image: $gradient-white, url('https://redvanisation.github.io/door-delivery/img/team-2x.jpg');
+    }
+
     width: 100%;
     height: 100vh;
-    background-image: $gradient-white, url('https://redvanisation.github.io/door-delivery/img/team.jpg');
+    background-image: $gradient-white, url('https://redvanisation.github.io/door-delivery/img/team-1x.jpg');
     background-size: cover;
     margin-bottom: 5rem;
 
@@ -49,13 +55,25 @@
     }
 
     &__order {
-        background-image: $gradient-white, url('https://redvanisation.github.io/door-delivery/img/elderly.jpg');
+        @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+        (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+        (max-resolution: 192dpi) and (min-width: 125em) {
+            background-image: $gradient-white, url('https://redvanisation.github.io/door-delivery/img/elderly-2x.jpg');
+        }
+
+        background-image: $gradient-white, url('https://redvanisation.github.io/door-delivery/img/elderly-1x.jpg');
         background-size: cover;
         background-position: center;
     }
     
     &__volunteer {
-        background-image: $gradient-white, url('https://redvanisation.github.io/door-delivery/img/team.jpg');
+        @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+        (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+        (max-resolution: 192dpi) and (min-width: 125em) {
+            background-image: $gradient-white, url('https://redvanisation.github.io/door-delivery/img/charity-2x.jpg');
+        }
+
+        background-image: $gradient-white, url('https://redvanisation.github.io/door-delivery/img/charity-1x.jpg');
         background-size: cover;
         background-position: center;        
     }
